@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Hunter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Mine Hunter</h1>
+        <div id="menu">
+            <label for="mines-select">Number of Mines:</label>
+            <select id="mines-select">
+                <option value="3">3</option>
+                <option value="5" selected>5</option>
+                <option value="7">7</option>
+                <option value="9">9</option>
+                <option value="11">11</option>
+                <option value="13">13</option>
+                <option value="15">15</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+            </select>
+            <button id="start-btn">Start Game</button>
+        </div>
+        <div id="game-info">
+            <span id="level">Level: 1</span>
+            <span id="coins">Coins: 0</span>
+            <span id="time">Time: 0s</span>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div id="controls">
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+            <button id="menu-btn">Menu</button>
+        </div>
+        <div id="message"></div>
+        <div id="game-over-popup" class="popup">
+            <div class="popup-content">
+                <h2>Game Over!</h2>
+                <button id="restart-btn">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
